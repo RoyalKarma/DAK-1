@@ -35,8 +35,11 @@ Mějme kód definovám předpisem S->X, poté \textbf{KraftMilanovo číslo} spe
         \item K > 1 - kód není jednoznačně dekódovatelný
     \end{itemize}
 \end{itemize}
-\section{Uvěďte příklad algoritmů pro bezztrátovou kompresi}
-LZW algoritmus
+\section{Uvěďte příklady algoritmů pro bezztrátovou kompresi}
+\begin{enumerate}
+    \item Aritmetické kódování (délka značek podle jejich pravděpodobností)
+    \item Kódování s dynamickým slovníkem (LZW algoritmus)
+\end{enumerate}
 
 \section{Co je optimální kód, pomocí které veličiny můžeme tyto kódy porovnávat}
 Nalezení optimálního kódu vede  na optimalizační problém, což je hledání minimální střední délky značky změnou délek jednotlivých $n_1, n_2, n_3 \dots n_n$, pro známí soubor pravděpodobností $p_1, p_2, \dots p_n$ pří splnění Kraftovy nerovnosti
@@ -84,4 +87,5 @@ Narozdíl od huffmanova kódu aritmetické kódování navrhuje značku pro kaž
     \item Ve všech následujících krocích budeme hledat nejdelší řetězec $w = z_i+1\dots z_j$ $(j\geqq i+1)$ v aktuálním slovníku D.
     Tvoří-li její \emph{r}-tý prvek $d_r$, bude dalším prvkem kódu $c_i=r$. 
     Opět definujeme další prvek slovníku w $z_{j+1}$ a vytvoříme tak nový slovník $D_{i+1} = (D_i, w\mathrm{ }z_{j+1}$.
+    \item Algoritmus nevyžaduje žádný slovník, definuje si sám seznam frází, které skládá. Vznikají hledáním a prodlužováním jižpoužitých frází.
 \end{enumerate}
