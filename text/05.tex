@@ -83,5 +83,10 @@ Tato minimální hodnota se nazývy Shannonův limit, je uvedena v [dB].
 \section{Vysvětlete princip zabezpečení zpráv proti chybám a a jeho vysvětlení}
 Uměle přidáváme další bity ke značkám, které zvětšují Hammingovu vzdálenost těchto značek a díky tomu při chybě jsme schopni určit, kde chyba nastala.
 
-\section{Co určuje Plotkinova hranice}
-Používá se k určení minimální potřebné délky kódového slova k dosažení požadované korekční či detekční schopnosti kódu.
+\section{Co určuje Plotkinova hranice + vztahy a další kritéria}
+Používá se k určení minimální potřebné délky kódového slova k dosažení požadované korekční či detekční schopnosti kódu. Zabezp. r = n - k
+$$n \geq 2* d_{min} -1$$
+$$r \geq 2* d_{min} -  log_{2}  d_{min} -2$$
+Pomocí \textbf{SF pravidla}, lze vypočítat délky jednotlivých značek: $n_{i} = -log_{2}p_{i}$
+
+Pro hledání optimálního kódu, lze využít \textbf{Kraft-McMillanovo číslo K} a \textbf{Kraftovu nerovnost.}

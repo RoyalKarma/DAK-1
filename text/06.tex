@@ -1,0 +1,16 @@
+\section{*6.Vysvětlete pojem lineární systematický blokový kód. Co znamená pojem lineární, co systematický a co blokový v problematice protichybových kódů?}
+\begin{itemize}
+    \item \textbf{Blokové kódy} - zabezpečovací proces je realizován pouze v rámci jediného bloku dat, který vznikl rozdělením datového toku
+    \item \textbf{Systematické kódy} - můžeme zcela jednoznačně rozlišit v posloupnosti přenášených prvků informační prvky $k$ a zabezpečovací prvky $r$
+    \item \textbf{Lineární kódy} - libovolnou kódovou kombinaci lze odvodit jako lineární kombinaci z ostatních kódových kombinací
+\end{itemize}
+
+\section{*6.Co musí platit pro řádky vytvářecí matice lineárního blokového kódu. Jak vektory tvořící tyto řádky označujeme?}
+\begin{itemize}
+    \item Vytvářecí matice G má k řádků a n sloupců
+    \item Řádky tvoří kódové kombinace, které jsou vzájemně lineárně nezávislé, tj. žádnou lineární operací mezi libovolnými řádky matice G nevznikne jiný řádek této matice
+    \item Žádný z řádků matice nesmí obsahovat pouze nulové prvky
+    \item Porovnáním řádků matice lze určit minimální Hammingovu vzdálenost $d_{min}$, která odpovídá minimální Hammingově vzdálenosti kódu $d_{min}$
+    \item \textbf{Řádky} = generující vektory (báze vektorového prostoru)
+    \item $G*H^{T}=0$
+\end{itemize}

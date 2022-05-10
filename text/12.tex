@@ -1,0 +1,28 @@
+\section{*12.Vysvětlete pojmy kryptografie, kryptoanalýza a kryptologie. Jaké hlavní úkoly plní kryptografické systémy? Jaké základní typy operací používá?}
+\begin{itemize}
+    \item \textbf{Kryptografie} - Věda zabývající se problematikou navrhování šifrovacích metod.
+    \item \textbf{Kryptoanalýza} - Věda zabývající se luštěním zašifrovaných textů bez znalosti tajného klíče (prolamování)
+    \item \textbf{Kryptologie} - Věda zabývající se studiem problematiky šifrování a dešifrování
+    \item \textbf{Důvěrnost} - Utajení informace před neoprávněnými uživatelem. \textbf{Autentičnost} - Příjemce má možnost zjistit původ zprávy. \textbf{Integrita} - Kontrola zprávy, zda nebyla během přenosu modifikována. \textbf{Nepopiratelnost} - Odesílatel by neměl mít možnost popřít autorství zprávy.
+    \item Jednoduché aritmetické operace (operace součtu modulo dvě), Substituce (znak původní zprávy se nahradí definovaným způsobem jiným znakem), Permutace (změní se definovaným způsobem pořadí znaků ve zprávě)
+\end{itemize}
+
+\section{*12.Symetrické a asymetrické kryptosystémy (varianty), výhody + příklad použití}
+\textbf{Symetrické}
+\begin{itemize}
+    \item Systémy s tajným, jediným klíčem
+    \item Používají se v případech dvoubodového spoje
+    \item\textbf{  - }Problém distribuce klíče (DH), Nelze prokázat totožnost autora zašifrovaných dat
+    \item\textbf{ + }Velmi rychlé algoritmy, šifrování velkých objemů dat.
+    \item Caeserova šifra, Vigenérova šifra (substituce), DES, AES
+\end{itemize}
+\textbf{Asymetrické}
+\begin{itemize}
+    \item Systémy s veřejným klíčem, klíče jsou navzájem různé a výpočet Kv → Ks je prakticky nerealizovatelný
+    \item Jeden klíč je veřejný (zajištění důvěrnosti a integrity)  a druhý tajný (zajištění autentičnost dat)
+    \item Využití problému faktorizace velkých čísel, diskrétního logaritmu, eliptických křivek
+    \item  K podepisování zpráv a k distribuci klíčů pro symetrické kryptosystémy
+    \item\textbf{ - }Pomalejší, zapotřebí infrastruktura veřejných klíčů 
+    \item\textbf{ + }Umožňuje zajištění důvěrnosti, integrity a autentičnosti dat 
+    \item RSA, DH
+\end{itemize}

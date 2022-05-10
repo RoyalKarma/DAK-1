@@ -1,0 +1,17 @@
+\section{*10.Uveďte základní dvě skupiny protichybovýh kódu (PKS). Vysvětlete rozdíl mezi nimi}
+\begin{itemize}
+    \item \textbf{PKS bez zpětné vazby} - Zabezpečení pomocí opravných protichybových kódů (\textbf{FEC}). Zabezpečení pomocí detekčních protichybových kódů bez zpětného kanálu (Všechny chybné přenesené zprávy jsou ztraceny). Zabezpečení pomocí protichybových kódů pracujících ve $smíšeném$, tj. opravném i detekčním režimu (Většina chybné přenesených zpráv je opravena, část chybné přenesených zpráv je ztracena.)
+    \item \textbf{PKS se zpětnou vazbou} - Zabezpečení pomocí detekčních  protichybových kódů s opakováním chybného přenosu (\textbf{ARQ}) (snížení propustnosti). Smíšené zabezpečení pomocí protichybových kódů pracujících v opravném i detekčním režimu - většina chybně přenesených zpráv je opravena (\textbf{FEC}), pro neopravitelné zprávy je využit mechanizmus ARQ.
+\end{itemize}
+
+\section{*10.Uveďte a stručně popište základní typy ARQ systémů}
+Chyba je opravena novým bezchybným přenosem. Při tom všechny předcházející přenosy s chybou jsou považovány za nepoužitelné
+\begin{itemize}
+    \item \textbf{Jednobloková ARQ} - Vysílač vyšle vždy pouze jeden blok, a pak se přenos přeruší až do doby, než přijde zpětným kanálem potvrzovací zpráva o správnosti přenosu. Opakovaní přenosu/pokračování
+    \item \textbf{Skupinové ARQ} - Vysílač vyšle vždy skupinu bloků, každý blok nezávisle zabezpečený detekčním kódem. Přijímač informuje zpětným kanálem vysílač o bezchybnosti celé skupiny.
+    \item \textbf{Nepřerušované ARQ} - Vysílač vysílá bloky bez přerušení až do doby, kdy přijde zpětným kanálem zpráva o tom, že některý blok byl přijat s chybou. Reakce selektivní/neselektivní opakování.
+\end{itemize}
+\section{*10.Rozdíl mezi ARQ a FEC, výhody a nevýhody.}
+\textbf{FEC} + Většina chybně přenesených zpráv je opravena. - Část chybné (neopravitelné) přenesených zpráv je ztracena. 
+
+\textbf{ARQ} + Výhodou je použití detekčních kódů, jejichž nadbytečnost je nižší než u kódu opravných. - Významnou nevýhodou je snížení propustnosti z důvodu čekání na potvrzovací zprávy. - přenosový systém schopen realizovat některou podobu zpětného kanálu.
