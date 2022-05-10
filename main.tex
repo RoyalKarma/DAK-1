@@ -1,0 +1,38 @@
+% Povinný argument: Kód předmětu
+\newcommand{\subject}{BPC-DAK}
+% Povinný argument: Název předmětu
+\newcommand{\subjectname}{Datová komunikace}
+% Povinný argument: Seznam autorů
+\newcommand{\authors}{On}
+% Povinný argument: Seznam korektorů
+\newcommand{\corrections}{Já}
+% Nepovinný argument: Popis dokumentu
+\newcommand{\docdesc}{Otázky ke zkoušce}
+% Nepovinný argument: Cílová skupina dokumentu
+\newcommand{\docgroup}{Informační bezpečnost, FEKT VUT}
+
+% Přepsáním argumentu na 'false' vypnete balíček 'minted' pro sázení kódu.
+% Pro jeho použití lokálně musíte mít v systému dostupný Python 3, python
+% knihovnu 'minted' a PDFLaTeX musíte spouštět s argumentem '-shell-escape'.
+% Místo něj můžete použít prostředí 'lstlisting'.
+\newcommand{\docminted}{true}
+
+\input{shared}
+\usepackage{mdframed}
+
+\begin{document}
+
+\titulka{}
+
+\tableofcontents
+\thispagestyle{empty}
+
+\setcounter{page}{0}
+
+\include{text/01}
+\include{text/02}
+\include{text/03}
+\include{text/04}
+\include{text/05}
+
+\end{document}
