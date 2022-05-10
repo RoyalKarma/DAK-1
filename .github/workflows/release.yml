@@ -78,6 +78,7 @@ jobs:
   addBuilt:
     runs-on: ubuntu-latest
     # potřeba listOfDirectories pro vytvoření jobs matrix
+    permissions: write-all
     needs: [ build, release ]
 
     steps:
