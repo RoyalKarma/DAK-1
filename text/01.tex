@@ -1,5 +1,6 @@
 \clearpage
-\section{Vysvětlete pojmy množství informace a entropie}
+\section{Základní poznatky z teorie informace}
+\subsection{Vysvětlete pojmy množství informace a entropie}
 \begin{itemize}
     \item \textbf{Množství informace} = I
     \begin{itemize}
@@ -17,33 +18,33 @@
     \end{itemize}
 \end{itemize}
 
-\section{ Vysvětlete rozdíl mezi jednotkami Shannon a bit}
+\subsection{ Vysvětlete rozdíl mezi jednotkami Shannon a bit}
 \begin{itemize}
     \item Shannon je jednotka informace
     \item Bit je jednotka dat
     \item data != informace
 \end{itemize}
 
-\section{3.	Vysvětlete pojem základní zdroj zpráv, čím je určen a jaké jsou jeho vlastnosti}
+\subsection{3.	Vysvětlete pojem základní zdroj zpráv, čím je určen a jaké jsou jeho vlastnosti}
 Jedná se o diskrétní prvek, jelikož k popisu je oizžut jibečbž oičet charakteristických prvků.
 Je určen množinou zpráv S = ${S_i}$´, kde každá s$_i$ je generována zdrojem s pravděpodobností p, přičemž platí, že $\sum p_i = 1$.
 Množinu S nazýváme také abeceda zdroje, jednotlivé zprávy jsou symboly.
 
-\section{Co je to nadbytečnost zdroje }
+\subsection{Co je to nadbytečnost zdroje }
 \textbf{Nadbytečnost} = R.
 Jinak také \textit{redundance}.
 R nabývá hodnot 0-1.
 Vhodným kódováním a kompresí se snažíme snížit její hodnotu k 0.
 
-\section{Vysvětlete pojem přizpůsobený zdroj zpráv a zdrojové kódovaní}
+\subsection{Vysvětlete pojem přizpůsobený zdroj zpráv a zdrojové kódovaní}
 Používá se v praxi, kdy je potřeba přizpůsobit základní zdroj pro potřeby přenosu přenosovým kanálem.
 Důvodem je nedostate k sigálových stavů vzhledem k počtu symbolů základního zdroje. Přízpůsobením zdroje na další přenost je použit pomocný zdroj, který má definován vyhovující počet symbolů. Pomocný zdroj je určen množinou X = ${x_i}$.
 Zdrojové kódování jako přiřazení $s_i => x_i,x_s,x_k$\dots pro každý prvek abecedy X, hovoříme tedy o n-násobně rozšířeném zdroji informace. Zdrojové kódování se dále dělí na rovnoměrné (všechny značky stejné dlouhé, n=konst) a nerovnoměrné (značky jsou různých délek.
 
-\section{Vysvětlete pojem účinnost kódování pro rovnoměrné a nerovnoměrné kódování}
+\subsection{Vysvětlete pojem účinnost kódování pro rovnoměrné a nerovnoměrné kódování}
 Účinnost kódování je ekvivalentem entropie základního zdroje a je vyšší při použití nerovnoměrného kódování.
 
-\section{7.	Jaké jsou statistické a dynamické charakteristiky přizpůsobeného zdroje zpráv}
+\subsection{7.	Jaké jsou statistické a dynamické charakteristiky přizpůsobeného zdroje zpráv}
 \textbf{Statistické}
 \begin{itemize}
     \item Entropie přizpůsobeného zdroje
@@ -59,10 +60,10 @@ Zdrojové kódování jako přiřazení $s_i => x_i,x_s,x_k$\dots pro každý pr
     
 \end{itemize}
 
-\section{Co je to modulační rychlost? Jakou má jednotku?}
+\subsection{Co je to modulační rychlost? Jakou má jednotku?}
 Modulační rychlost vyjadřuje počet změn prvků za jednotku času. Jednotkou je Bód [Bd].
 
-\section{Uveďte popis chování systému pomocí vnějších a pomocí vnitřních stavových veličin}
+\subsection{Uveďte popis chování systému pomocí vnějších a pomocí vnitřních stavových veličin}
 \textbf{Vnější}
 \begin{itemize}
     \item Popis systému matematickým modelem pomocí operátoru transformace T. Vztah mezi vstupy a výstupy lze poté zapsat pomocí rovnice $y=T(x)$.
@@ -80,7 +81,7 @@ Modulační rychlost vyjadřuje počet změn prvků za jednotku času. Jednotkou
     \item Sledujeme-li v určitém časovém okamžiku \textit{t} hodnoty stavových , získáme \textit{stavový vektor} q(t).
 \end{itemize}
 
-\section{Vysvětlete rozdíl mezi deterministickým a stochastickým systémem}
+\subsection{Vysvětlete rozdíl mezi deterministickým a stochastickým systémem}
 
 \textbf{Deterministický}
 \begin{itemize}

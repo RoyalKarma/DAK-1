@@ -1,4 +1,6 @@
-\section{Vysvětlete pojmy značka, abeceda, kód, prvek značky a symbol}
+\clearpage
+\section{Přenos dat}
+\subsection{Vysvětlete pojmy značka, abeceda, kód, prvek značky a symbol}
 \begin{itemize}
     \item \textbf{Značka} je skupina prvků ze souboru \textbf{X}, která je přiřazena v procesu kódování jednomu prvku ze souboru \textbf{S}.
     \item \textbf{Abecedu} definujeme jako množinu používaných značek.
@@ -7,7 +9,7 @@
     \item \textbf{Symbol} je interpretace značky nebo její částy v datovém signálu.
 \end{itemize}
 
-\section{Uveďte rozdíl mezi přenosovým kanálem a okruhem. Vysvětlete pojmy: komutovaný spoj, pevný spoj, simplexní, duplexní, poloduplexní spoj. Metody vytváření duplexního spojení}
+\subsection{Uveďte rozdíl mezi přenosovým kanálem a okruhem. Vysvětlete pojmy: komutovaný spoj, pevný spoj, simplexní, duplexní, poloduplexní spoj. Metody vytváření duplexního spojení}
 \begin{itemize}
     \item \textbf{Přenosový kanál} - jde o soubor přenosových prostředků, který není přesně určen jen pro určitý druh přenosu, ale může být použit různými druhy přenosů využíván k  \textbf{jednosměrnůmu přenosu}.
 
@@ -28,7 +30,7 @@ Metody realizace duplexního spojení
     \item Obvodové
 \end{itemize}
 
-\section{Co jsou to provozní charakteristiky datavoých spojů. Popis nejčastěji užívaných}
+\subsection{Co jsou to provozní charakteristiky datavoých spojů. Popis nejčastěji užívaných}
 \begin{itemize}
     \item \textbf{Přenosová rychlost} - potřebná rychlost závisí na potřebném objemu přenášených dat.
     Je odlišná na různých úrovních přenosu.
@@ -47,12 +49,12 @@ Metody realizace duplexního spojení
     Při sériovém přenosu se nejčastěji setkáme s těmito typy přenosu.
 \end{itemize}
 
-\section{Vysvětlete rozdíl mezi rychlostí přenosu a rychlostí přenosu informace}
+\subsection{Vysvětlete rozdíl mezi rychlostí přenosu a rychlostí přenosu informace}
 \textbf{Přenosová rychlost} je definovaná jako počet dvojkových signálových prvků (bitů) přenesených za 1 s. [bit/s]
 
 \textbf{Rychlost přenosu informace} - efektivní rychlost (počítají se jen správně přenesené bity nesoucí informaci, ne zabezpečovací)
 
-\section{Vysvětlete pojmy časového režimu přenosu: synchronní přenos a arytmický. Uveďte příklady}
+\subsection{Vysvětlete pojmy časového režimu přenosu: synchronní přenos a arytmický. Uveďte příklady}
 \begin{itemize}
     \item  \textbf{ Synchornní} - značky jsou vysílány kontinuálně a ke změně dochází po konstatním časovém intervalu.
     Není-li potřeba přenášet data přenáší se výplňové značky.
@@ -61,13 +63,13 @@ Metody realizace duplexního spojení
     
 \end{itemize}
 
-\section{Co je to systém přenosu dat. Jeho základní striktura a význam jednotlivých částí}
+\subsection{Co je to systém přenosu dat. Jeho základní striktura a význam jednotlivých částí}
 Jde o soubor podrobněji nespecifikovaných zařázení, které slouží k technické realizaci přenosu dat.
 Tvoří jej hardware i software.
 
 \includegraphics[]{images/přenos_dat.png}
 
-\section{Specifikujte  4 základní typy rozhraní, které jsou zpravidla předmětem normalizace. Jaké znáte normalizační organizace}
+\subsection{Specifikujte  4 základní typy rozhraní, které jsou zpravidla předmětem normalizace. Jaké znáte normalizační organizace}
 \textbf{Typy rozhraní}
 \begin{itemize}
     \item Mechanické vlastnosti
@@ -84,7 +86,7 @@ Tvoří jej hardware i software.
      \item ETSI - European Telecommunications Standards Institute
 \end{itemize}
 
-\section{Popište vlastnosti a použití rozhraní RS232 a USB}
+\subsection{Popište vlastnosti a použití rozhraní RS232 a USB}
 \textbf{RS232}
 \begin{itemize}
     \item Standardní sériové rozhraní, dříve používáno pro připojení telefonních modemů.
@@ -103,13 +105,13 @@ Tvoří jej hardware i software.
     \item Super speed
 \end{itemize}
 \end{itemize}
-\section{Ve kterých technologiích se můžete setkat s konektorem RJ45}
+\subsection{Ve kterých technologiích se můžete setkat s konektorem RJ45}
 \begin{itemize}
     \item Ethernet přes UTP
     \item Rozhraní E1 - používané v telekomunikacích pro přenos 30 hovorových kanálů.
     \item Sériové rozhraní RS232 - viz. výše.
 \end{itemize}
-\section{Uveďte příklady sériových sběrnic pro mikrokontrolery}
+\subsection{Uveďte příklady sériových sběrnic pro mikrokontrolery}
 \begin{itemize}
     \item I$^2$ C - Inter-integrated circiut - jde o sběrnici používající dvojice signálových vodičů v zapojení s otevřeným kolektorem SCLK a SDA
     \item SPI- Serial Peripheral Interface Bus - jde sběrnice využívající trojice signálů SCLK, MOSI a MISO
