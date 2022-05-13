@@ -10,10 +10,25 @@
 \end{itemize}
 
 \subsection{Zakreslete a popište schéma kryptografického systému.}
+\includegraphics[width=16cm]{images/12_schema.png}
 
 \subsection{Jaké jsou základní pravidla kryptografie?}
+\begin{itemize}
+    \item Šifrovací systém má být navržen tak, aby bylo snadné měnit šifrovací klíč nebo šifrovací postup.
+    \item Nepovolaná osoba smí mít k dispozici minimální množství šifrovaných dat. Data, která nejsou tajná,
+    se zabezpečovat šifrou nemají.
+    \item  V žádném případě nesmí dojít k tomu, že by se tatáž zpráva přenášela vícekrát, při čemž by byla 
+    pokaždé zašifrována stejným klíčem.
+    \item Užívá-li se ke generování šifrovacího klíče nějaká pseudonáhodná posloupnost čísel, je
+    třeba tato čísla generovat postupem, o kterém víme, že jej nežádoucí osoba nezná.
+\end{itemize}
 
 \subsection{Uveďte základní typy operací využívaných v kryptografii?}
+\begin{itemize}
+    \item \textbf{Aritmetické operace} - data jsou brána jako čísla
+    \item \textbf{Substituce} - data se nahrazují jinými
+    \item \textbf{Transpozice} (Permutace) - Mění pořadí znaků ve zprávě
+\end{itemize}
 
 \subsection{Symetrické a asymetrické kryptosystémy (varianty), výhody + příklad použití}
 \textbf{Symetrické}
