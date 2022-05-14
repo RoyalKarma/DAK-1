@@ -19,10 +19,59 @@ Chyba je opravena novým bezchybným přenosem. Při tom všechny předcházejí
 \textbf{ARQ} + Výhodou je použití detekčních kódů, jejichž nadbytečnost je nižší než u kódu opravných. - Významnou nevýhodou je snížení propustnosti z důvodu čekání na potvrzovací zprávy. - přenosový systém schopen realizovat některou podobu zpětného kanálu.
 
 \subsection{Co udává propustnost systému a efektivní informační rychlost?}
+\begin{itemize}
+    \item Rozlišujeme propustnosti:
+    \begin{itemize}
+        \item absolutní ($PR$) - poměr úspěšně přenesených datových jednotek a časového intervalu 
+        (totožné s efektivní informační rychlostí)
+        \item relativní ($PR_r$) - poměr úspěšně přenesených jednotek za časový interval k maximálnímu
+        možnému přenositelnému množství datových jednotek za tento interval
+        \item Datové jednotky mohou být bity, znaky, bloky, zprávy
+    \end{itemize}
+    \item efektivní informační rychlost - poměr úspěšně přenesených datových jednotek a časového intervalu 
+\end{itemize}
 
 \subsection{Jaký vztah je mezi kódovým poměrem a efektivní informační rychlost v ARQ systémech a
 v FEC systémech.}
+\begin{itemize}
+    \item ARQ: $v_{ef}=PRB_r\cdot R$, kde $v_{ef}$ je efektivní informační rychlost, $PRB_r$ je relativní propustnost
+    a $R$ je kódový poměr, $R=\frac{k}{n}$, kde $k$ je počet informačních bitů a $n$ je počet všech bitů
+    \item FEC: $v_ef=R$, protože $PRB_r$ je díky opravám chyb rovno jedné
+\end{itemize}
 
 \subsection{Srovnejte ARQ a FEC protichybové systémy.}
+\subsubsection{ARQ}
+\begin{itemize}
+    \item \textbf{A}utomatic \textbf{R}epeat Re\textbf{q}uest
+    \item Používá detekční kódy
+    \item Při detekci chyby vyšle data znovu
+    \item Efektivní informační rychlost závisí na chybovosti kanálu, kódovém poměru a algoritmu ARQ 
+    (Při Stop\&Wait je propustnost nízká vždy, při GoBackN je propustnost nízká u kanálu  s vysokou chybovostí.
+    ARQ SelectiveRepeat je vhodné jen na zařízení s dostatečně velkou vyrovnávací pamětí)
+    \item Vyžaduje zpětný kanál, kterým se vysílač dozví o nutosti opakování nebo potvrzení přijetí
+\end{itemize}
+\subsubsection{FEC}
+\begin{itemize}
+    \item \textbf{F}orward \textbf{E}rror \textbf{C}orrection
+    \item Používá korekční kódy
+    \item Při výskytu chyby rovnou opraví
+    \item Efektivní informační rychlost závisí na kódovém poměru 
+    (ale musí být vhodně zvolen, aby eliminoval chybovost kanálu)
+    \item Nevyžaduje zpětný kanál
+\end{itemize}
 
 \subsection{Uveďte výhody a nevýhody systému se smíšeným zabezpečením HCS}
+\begin{itemize}
+    \item \textbf{H}ybrid \textbf{C}ode \textbf{S}ecurity
+    \item Výhody:
+    \begin{itemize}
+        \item Může používat jediný kód s korekčními i detekčními vlastnostmi
+        \item V případě detekce chyby je možné vyžádat si korekční doplněk (bity potřebné k úpravě kódu na korekční)
+    \end{itemize}
+    \item Nevýhody:
+    \begin{itemize}
+        \item Oproti korekčnímu režimu mívají kódy ve smíšeném režimu menší realizační zisk
+        \item Pokud chceme použít kaskádově zapojené detekční a korekční kódy, musíme je vhodně volit, ať se vzájemně
+        neovlivňují
+    \end{itemize}
+\end{itemize}

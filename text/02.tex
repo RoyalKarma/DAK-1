@@ -30,11 +30,31 @@ Vztah mezi modulační rychlostí a šiřkou pásma
 \subsection{Co popisuje výkonová spektrální hustota, jakou má jednotku, v jakých jednotkách se zpravidla udává. Uveďte vztah pro výkon}
  Výkonová spektrální hustota popisuje rozložení výkonu napříč spektrem, Její základndí jednotkou je W/Hz. Většinou se ale uvádí v dBm/hz
 
-Vzath pro výkon
+Vztah pro výkon
 $$P = \int_{-\infty}^{\infty} PSD(f)\mathrm{d}f$$
 
+\subsection{Pro jaké veličiny jsou běžně užívané jednotky dBm a dBm/Hz. Uveďte základní jednotky
+těchto veličin a vztahy pro přepočet.}
+\begin{itemize}
+    \item dBm - pro výkon (vysílací nebo výkon šumu), základní jednotka je Watt [W] (poměr výkonu k 1 mW)
+    \item Přepočet: $P_{dBm}=10\cdot log\left(\frac{P_W}{0,001}\right)$
+    \item dBm/Hz - pro spektrální hustotu (signálu nebo šumu), základní jednotka je Watt/Hertz [W/Hz]
+\end{itemize}
+
 \subsection{Co je to problém příjemce}
-Problém příjemce je zjištění, zda platí rovnost $S=S^*, $ kde S=${s_i}$ ze zdroje dat a $S^*$ je vstupní abeceda dekóderu.¨
+Problém příjemce je zjištění, zda platí rovnost $S=S^*, $ kde S=${s_i}$ ze zdroje dat a $S^*$ je vstupní abeceda dekóderu.
+
+\subsection{Obecný princip kódování a jeho vysvětlení.}
+\begin{itemize}
+    \item Používá se:
+    \begin{itemize}
+        \item kódování zdroje - pro vyjádření velkého počtu zpráv malým počtem stavů kanálu
+        \item kódování kanálu - protichybové kódování, linkové kódy, modulace
+    \end{itemize}
+    \item Obecně jde o modifikaci dat jinými daty podle určitých pravidel
+    \item U kódování zdroje jde o záměnu zpráv abecedy S na řetězce znaků abecedy X
+    \item U kódování kanálu jde o přidávání do informačních dat délky $k$ zabezpečovací data délky $r$
+\end{itemize}
 
 \subsection{Co je to „Kódování zdroje“ a „Kódování kanálu“ }
 \begin{itemize}
